@@ -1,0 +1,5 @@
+{
+  "status": "not_executed",
+  "summary": "Manifests are written and syntax-checked by the test-suite, but kubectl and a cluster are not available, so nothing was deployed.",
+  "next": "Install Docker Desktop (Kubernetes) or minikube/kind, then follow docs/experiment3_kubernetes.md"
+}

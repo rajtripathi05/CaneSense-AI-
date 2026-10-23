@@ -1,0 +1,12 @@
+{
+ "best_cost_per_run": "t3.micro",
+ "fastest": "c6i.2xlarge",
+ "recommendation": "For this workload the cheapest suitable choice is t3.micro (est. $0.02/1,000 runs); c6i.2xlarge is fastest (4.177 s) but costs more per run because speed-up is sub-linear."
+}
+t3.micro     2vCPU  1GiB $0.0104/h run 6.89s fits=True $7.59/mo $0.020/1000 runs
+t3.small     2vCPU  2GiB $0.0208/h run 6.89s fits=True $15.18/mo $0.040/1000 runs
+t3.medium    2vCPU  4GiB $0.0416/h run 6.89s fits=True $30.37/mo $0.080/1000 runs
+c6i.large    2vCPU  4GiB $0.0850/h run 6.89s fits=True $62.05/mo $0.163/1000 runs
+m6i.large    2vCPU  8GiB $0.0960/h run 6.89s fits=True $70.08/mo $0.184/1000 runs
+c6i.xlarge   4vCPU  8GiB $0.1700/h run 4.97s fits=True $124.10/mo $0.235/1000 runs
+c6i.2xlarge  8vCPU 16GiB $0.3400/h run 4.18s fits=True $248.20/mo $0.394/1000 runs

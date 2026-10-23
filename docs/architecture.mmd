@@ -1,0 +1,32 @@
+%% Editable Mermaid source (render at https://mermaid.live or with mermaid-cli)
+flowchart LR
+  subgraph Client[Browser]
+    UI[Streamlit UI\n9 views, Plotly charts]
+  end
+  subgraph App[CaneSense AI container / pod :8501]
+    ST[Streamlit server\napp.py + views/]
+    SVC[service.py\nscenario pipeline]
+    DATA[data.py\nsynthetic dataset + validation]
+    SCN[scenarios.py\ndeterministic presets]
+    ML[model.py\nRandomForest classifier]
+    ENG[engine.py\nrecommendation rules + water budget]
+    REP[reports.py\nPDF / CSV / Excel]
+  end
+  subgraph Store[Local files]
+    MOD[(models/*.joblib, metrics.json)]
+    AST[(assets/images, brand)]
+    RES[(experiments/results, evidence/)]
+  end
+  subgraph Cloud[Cloud experiments]
+    D[Docker image -> Docker Hub]
+    K[Kubernetes: Deployment, Service, HPA]
+    B[Benchmark + FinOps scripts]
+  end
+  UI --> ST --> SVC
+  SVC --> DATA --> SCN --> ML --> ENG
+  ST --> REP
+  ML --- MOD
+  ST --- AST
+  ST --- RES
+  App --> D --> K
+  B --> RES

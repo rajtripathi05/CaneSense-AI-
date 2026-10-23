@@ -1,0 +1,31 @@
+============================= test session starts =============================
+platform win32 -- Python 3.11.0, pytest-9.0.3, pluggy-1.6.0 -- C:\Users\rajtr\AppData\Local\Programs\Python\Python311\python.exe
+rootdir: C:\Users\rajtr\OneDrive\Desktop\cc mini project
+plugins: anyio-4.12.0
+collecting ... collected 23 items
+
+tests/test_app_smoke.py::test_default_page_renders_without_exception PASSED [  4%]
+tests/test_data_model.py::test_dataset_is_reproducible_and_large_enough PASSED [  8%]
+tests/test_data_model.py::test_different_seed_changes_data PASSED        [ 13%]
+tests/test_data_model.py::test_validation_accepts_baseline_and_rejects_bad_input PASSED [ 17%]
+tests/test_data_model.py::test_model_split_metrics_and_inference PASSED  [ 21%]
+tests/test_data_model.py::test_predict_handles_missing_sensor_value PASSED [ 26%]
+tests/test_deployment_files.py::test_kubernetes_manifests_parse_and_have_probes_and_resources PASSED [ 30%]
+tests/test_deployment_files.py::test_dockerfile_copies_assets_and_exposes_streamlit PASSED [ 34%]
+tests/test_deployment_files.py::test_local_assets_and_credits_exist PASSED [ 39%]
+tests/test_deployment_files.py::test_no_secrets_in_source PASSED         [ 43%]
+tests/test_engine_scenarios.py::test_scenarios_are_deterministic PASSED  [ 47%]
+tests/test_engine_scenarios.py::test_dry_spell_increases_risk_and_demand PASSED [ 52%]
+tests/test_engine_scenarios.py::test_rain_expected_shifts_advice_to_rain_adjustment PASSED [ 56%]
+tests/test_engine_scenarios.py::test_sensor_failure_flags_review PASSED  [ 60%]
+tests/test_engine_scenarios.py::test_water_restriction_defers_plots_within_budget PASSED [ 65%]
+tests/test_engine_scenarios.py::test_reco_quantities_are_consistent PASSED [ 69%]
+tests/test_engine_scenarios.py::test_overrides_simulate_completed_irrigation PASSED [ 73%]
+tests/test_engine_scenarios.py::test_unknown_scenario_raises PASSED      [ 78%]
+tests/test_reports.py::test_pdf_generates_valid_document PASSED          [ 82%]
+tests/test_reports.py::test_pdf_scope_changes_output_and_handles_one_row PASSED [ 86%]
+tests/test_reports.py::test_pdf_academic_block_is_optional PASSED        [ 91%]
+tests/test_reports.py::test_csv_reflects_selected_records PASSED         [ 95%]
+tests/test_reports.py::test_excel_has_expected_sheets_and_rows PASSED    [100%]
+
+============================= 23 passed in 12.51s =============================

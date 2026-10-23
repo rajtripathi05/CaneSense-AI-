@@ -1,0 +1,29 @@
+plot_id,village,lat,lon,area_ha,crop_stage,variety,soil_type,irrigation_type,sensor_id,battery_pct
+CS-P01,Amravanti Wadi,16.88846,74.50294,2.9,Grand growth,Co 86032,Black clay,Furrow,SN-1007,84
+CS-P02,Amravanti Wadi,16.88753,74.51997,1.9,Grand growth,Co 86032,Black clay,Sprinkler,SN-1014,88
+CS-P03,Amravanti Wadi,16.8887,74.53421,2.1,Germination,CoVC 18061,Black clay,Sprinkler,SN-1021,84
+CS-P04,Amravanti Wadi,16.87098,74.50633,2.9,Maturity,CoVC 18061,Black clay,Sprinkler,SN-1028,37
+CS-P05,Amravanti Wadi,16.87262,74.52065,2.6,Ripening,CoM 0265,Black clay,Drip,SN-1035,65
+CS-P06,Chandanpur,16.88969,74.55933,1.9,Tillering,Co 0238,Alluvial loam,Sprinkler,SN-1042,89
+CS-P07,Chandanpur,16.88624,74.57581,2.8,Maturity,CoVC 18061,Alluvial loam,Drip,SN-1049,79
+CS-P08,Chandanpur,16.88834,74.59152,0.8,Maturity,CoVC 18061,Alluvial loam,Furrow,SN-1056,85
+CS-P09,Chandanpur,16.87129,74.55854,1.1,Tillering,CoM 0265,Alluvial loam,Sprinkler,SN-1063,71
+CS-P10,Chandanpur,16.8715,74.57524,2.1,Grand growth,CoVC 18061,Alluvial loam,Drip,SN-1070,63
+CS-P11,Devgad Khurd,16.85429,74.48421,2.8,Tillering,CoVC 18061,Red loam,Drip,SN-1077,54
+CS-P12,Devgad Khurd,16.85404,74.49936,2.7,Grand growth,CoM 0265,Red loam,Furrow,SN-1084,45
+CS-P13,Devgad Khurd,16.85246,74.51493,2.5,Grand growth,Co 0238,Red loam,Sprinkler,SN-1091,44
+CS-P14,Devgad Khurd,16.83767,74.4855,1.7,Grand growth,Co 0238,Red loam,Drip,SN-1098,40
+CS-P15,Devgad Khurd,16.83502,74.4985,3.0,Grand growth,CoM 0265,Red loam,Furrow,SN-1105,85
+CS-P16,Harsulwadi,16.85411,74.5381,1.5,Germination,CoM 0265,Black clay,Sprinkler,SN-1112,48
+CS-P17,Harsulwadi,16.85365,74.55536,1.2,Maturity,Co 86032,Black clay,Furrow,SN-1119,63
+CS-P18,Harsulwadi,16.85303,74.5729,2.4,Germination,CoVC 18061,Black clay,Drip,SN-1126,67
+CS-P19,Harsulwadi,16.83825,74.54004,1.0,Grand growth,CoVC 18061,Black clay,Furrow,SN-1133,72
+CS-P20,Harsulwadi,16.83493,74.55595,0.9,Ripening,CoM 0265,Black clay,Furrow,SN-1140,40
+CS-P21,Jaggery Nagar,16.826,74.51387,3.1,Grand growth,Co 0238,Sandy loam,Drip,SN-1147,56
+CS-P22,Jaggery Nagar,16.82238,74.52408,0.9,Maturity,Co 86032,Sandy loam,Drip,SN-1154,71
+CS-P23,Jaggery Nagar,16.82049,74.53977,1.5,Grand growth,Co 0238,Sandy loam,Furrow,SN-1161,42
+CS-P24,Jaggery Nagar,16.80625,74.50772,0.9,Grand growth,Co 0238,Sandy loam,Furrow,SN-1168,87
+CS-P25,Kaneri Pada,16.82165,74.5659,1.5,Grand growth,CoVC 18061,Alluvial loam,Furrow,SN-1175,45
+CS-P26,Kaneri Pada,16.82232,74.57816,3.2,Maturity,Co 86032,Alluvial loam,Furrow,SN-1182,93
+CS-P27,Kaneri Pada,16.82343,74.59746,2.7,Grand growth,CoM 0265,Alluvial loam,Drip,SN-1189,83
+CS-P28,Kaneri Pada,16.80727,74.56266,1.4,Tillering,Co 86032,Alluvial loam,Drip,SN-1196,46

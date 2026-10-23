@@ -1,0 +1,5 @@
+{
+  "status": "executed",
+  "summary": "Benchmark executed on this machine at 1, 2, 4 and 8 pinned vCPUs (3 repetitions each); results and chart saved. Local-process emulation, not cloud VMs.",
+  "next": "Optional: scripts/docker_benchmark.ps1 for container-enforced CPU/memory limits."
+}

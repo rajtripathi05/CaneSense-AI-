@@ -1,0 +1,110 @@
+{
+  "experiment": "Experiment 7 - Cloud resource right-sizing",
+  "generated": "2026-10-23T05:37:11",
+  "workload": "CaneSense analytics pipeline: simulate 6 synthetic estates (25,200 plot-day rows), label, train RandomForest (300 trees), batch inference on all rows, 20x recommendation-engine runs. Fixed seed.",
+  "host": "Windows 10, Intel64 Family 6 Model 197 Stepping 2, GenuineIntel, 16 logical CPUs, 31 GiB RAM, Python 3.11.0",
+  "method": "Each profile = fresh subprocess pinned to N logical CPUs via OS affinity (+ BLAS/OpenMP thread caps), 3 repetitions, median reported. Peak memory = max peak working set.",
+  "caveat": "Local emulation: CPU count is enforced by affinity but memory is only measured, not capped, and the host CPU differs from any cloud instance. Treat as relative scaling evidence, not a prediction of absolute cloud timings. Container-enforced limits: scripts/docker_benchmark.ps1 (not executed - Docker unavailable on this machine).",
+  "profiles": [
+    {
+      "profile": "1 vCPU",
+      "cores": 1,
+      "reps": 3,
+      "median_s": 10.975,
+      "min_s": 10.84,
+      "max_s": 11.408,
+      "peak_rss_mb": 482.9,
+      "rows": 25200,
+      "stages": {
+        "simulate_s": 0.889,
+        "features_s": 0.009,
+        "train_s": 9.438,
+        "inference_s": 0.303,
+        "recommend_s": 0.343
+      },
+      "f1_macro": 0.9028,
+      "speedup": 1.0,
+      "efficiency_pct": 100.0
+    },
+    {
+      "profile": "2 vCPU",
+      "cores": 2,
+      "reps": 3,
+      "median_s": 6.89,
+      "min_s": 6.856,
+      "max_s": 6.974,
+      "peak_rss_mb": 484.8,
+      "rows": 25200,
+      "stages": {
+        "simulate_s": 1.018,
+        "features_s": 0.009,
+        "train_s": 5.265,
+        "inference_s": 0.177,
+        "recommend_s": 0.401
+      },
+      "f1_macro": 0.9028,
+      "speedup": 1.59,
+      "efficiency_pct": 79.5
+    },
+    {
+      "profile": "4 vCPU",
+      "cores": 4,
+      "reps": 3,
+      "median_s": 4.974,
+      "min_s": 4.816,
+      "max_s": 4.983,
+      "peak_rss_mb": 485.5,
+      "rows": 25200,
+      "stages": {
+        "simulate_s": 1.061,
+        "features_s": 0.009,
+        "train_s": 3.372,
+        "inference_s": 0.147,
+        "recommend_s": 0.385
+      },
+      "f1_macro": 0.9028,
+      "speedup": 2.21,
+      "efficiency_pct": 55.2
+    },
+    {
+      "profile": "8 vCPU",
+      "cores": 8,
+      "reps": 3,
+      "median_s": 4.177,
+      "min_s": 4.094,
+      "max_s": 4.177,
+      "peak_rss_mb": 485.5,
+      "rows": 25200,
+      "stages": {
+        "simulate_s": 1.096,
+        "features_s": 0.008,
+        "train_s": 2.545,
+        "inference_s": 0.116,
+        "recommend_s": 0.413
+      },
+      "f1_macro": 0.9028,
+      "speedup": 2.63,
+      "efficiency_pct": 32.9
+    }
+  ],
+  "memory_scaling": [
+    {
+      "scale": 1,
+      "rows": 4200,
+      "peak_rss_mb": 225.6,
+      "total_s": 1.77
+    },
+    {
+      "scale": 3,
+      "rows": 12600,
+      "peak_rss_mb": 333.5,
+      "total_s": 3.88
+    },
+    {
+      "scale": 6,
+      "rows": 25200,
+      "peak_rss_mb": 484.3,
+      "total_s": 6.92
+    }
+  ]
+}

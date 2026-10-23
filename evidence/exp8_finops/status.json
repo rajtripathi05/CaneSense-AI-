@@ -1,0 +1,5 @@
+{
+  "status": "executed",
+  "summary": "Cost model computed from the Experiment 7 measurements and assumed list prices. Estimates only - no cloud account or actual charges.",
+  "next": "Verify the assumed prices in scripts/finops.py against the provider's pricing calculator."
+}

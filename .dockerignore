@@ -1,0 +1,14 @@
+.git
+.gitignore
+__pycache__/
+*.pyc
+.venv/
+venv/
+scratch/
+outputs/
+models/*.joblib
+tests/
+.pytest_cache/
+*.zip
+docs/screenshots/
+.claude/

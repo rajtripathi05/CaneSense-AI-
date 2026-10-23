@@ -1,0 +1,8 @@
+instance,vcpu,memory_gib,hourly_usd,measured_runtime_s,memory_fits,monthly_always_on_usd,cost_per_run_usd,cost_per_1000_runs_usd,monthly_workload_usd,runs_per_hour_capacity,note
+t3.micro,2,1,0.0104,6.89,True,7.59,2e-05,0.02,0.0143,522.5,cheapest per run among instances that fit memory
+t3.small,2,2,0.0208,6.89,True,15.18,4e-05,0.04,0.0287,522.5,
+t3.medium,2,4,0.0416,6.89,True,30.37,8e-05,0.08,0.0573,522.5,
+c6i.large,2,4,0.085,6.89,True,62.05,0.000163,0.163,0.1171,522.5,
+m6i.large,2,8,0.096,6.89,True,70.08,0.000184,0.184,0.1323,522.5,
+c6i.xlarge,4,8,0.17,4.974,True,124.1,0.000235,0.235,0.1691,723.8,
+c6i.2xlarge,8,16,0.34,4.177,True,248.2,0.000394,0.394,0.284,861.9,fastest among instances that fit memory

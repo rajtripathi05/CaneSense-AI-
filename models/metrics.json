@@ -1,0 +1,67 @@
+{
+  "n_train": 3150,
+  "n_test": 1050,
+  "split": "stratified 75/25",
+  "seed": 42,
+  "accuracy": 0.9266666666666666,
+  "precision_macro": 0.8751964819478202,
+  "recall_macro": 0.9184012033773589,
+  "f1_macro": 0.8948998521920492,
+  "cv_f1_macro_mean": 0.8402252553746783,
+  "cv_f1_macro_std": 0.017141135420405906,
+  "per_class": {
+    "Low": {
+      "precision": 0.9871428571428571,
+      "recall": 0.937584803256445,
+      "f1": 0.9617258176757133,
+      "support": 737
+    },
+    "Medium": {
+      "precision": 0.7535545023696683,
+      "recall": 0.8641304347826086,
+      "f1": 0.8050632911392405,
+      "support": 184
+    },
+    "High": {
+      "precision": 0.8848920863309353,
+      "recall": 0.9534883720930233,
+      "f1": 0.917910447761194,
+      "support": 129
+    }
+  },
+  "confusion_matrix": [
+    [
+      691,
+      46,
+      0
+    ],
+    [
+      9,
+      159,
+      16
+    ],
+    [
+      0,
+      6,
+      123
+    ]
+  ],
+  "classes": [
+    "Low",
+    "Medium",
+    "High"
+  ],
+  "feature_importance": {
+    "soil_moisture": 0.6117076658950322,
+    "soil_whc": 0.10871393912325919,
+    "stage_threshold": 0.07012295299221001,
+    "days_since_irrigation": 0.05649750213550789,
+    "et0": 0.0383409354098461,
+    "air_temp": 0.03317140180653486,
+    "humidity": 0.03288093183787282,
+    "soil_temp": 0.030849152888484634,
+    "rain_24h": 0.010661387465108496,
+    "forecast_rain_48h": 0.007054130446143697
+  },
+  "note": "Labels come from a synthetic agronomic rule plus noise. Metrics show how well the model recovers that synthetic rule; they are NOT evidence of accuracy on real sugarcane farms."
+}

@@ -1,0 +1,69 @@
+  1 core(s) rep 1: workload 10.84s, process wall 12.71s, peak 483 MB
+  1 core(s) rep 2: workload 10.98s, process wall 12.70s, peak 483 MB
+  1 core(s) rep 3: workload 11.41s, process wall 13.26s, peak 483 MB
+  2 core(s) rep 1: workload 6.86s, process wall 8.79s, peak 485 MB
+  2 core(s) rep 2: workload 6.97s, process wall 9.14s, peak 482 MB
+  2 core(s) rep 3: workload 6.89s, process wall 8.90s, peak 483 MB
+  4 core(s) rep 1: workload 4.97s, process wall 7.09s, peak 484 MB
+  4 core(s) rep 2: workload 4.98s, process wall 7.18s, peak 485 MB
+  4 core(s) rep 3: workload 4.82s, process wall 6.74s, peak 486 MB
+  8 core(s) rep 1: workload 4.09s, process wall 5.93s, peak 484 MB
+  8 core(s) rep 2: workload 4.18s, process wall 6.25s, peak 483 MB
+  8 core(s) rep 3: workload 4.18s, process wall 6.34s, peak 485 MB
+  memory scaling x1: 4,200 rows, peak 226 MB
+  memory scaling x3: 12,600 rows, peak 334 MB
+  memory scaling x6: 25,200 rows, peak 484 MB
+[
+ {
+  "profile": "1 vCPU",
+  "cores": 1,
+  "reps": 3,
+  "median_s": 10.975,
+  "min_s": 10.84,
+  "max_s": 11.408,
+  "peak_rss_mb": 482.9,
+  "rows": 25200,
+  "f1_macro": 0.9028,
+  "speedup": 1.0,
+  "efficiency_pct": 100.0
+ },
+ {
+  "profile": "2 vCPU",
+  "cores": 2,
+  "reps": 3,
+  "median_s": 6.89,
+  "min_s": 6.856,
+  "max_s": 6.974,
+  "peak_rss_mb": 484.8,
+  "rows": 25200,
+  "f1_macro": 0.9028,
+  "speedup": 1.59,
+  "efficiency_pct": 79.5
+ },
+ {
+  "profile": "4 vCPU",
+  "cores": 4,
+  "reps": 3,
+  "median_s": 4.974,
+  "min_s": 4.816,
+  "max_s": 4.983,
+  "peak_rss_mb": 485.5,
+  "rows": 25200,
+  "f1_macro": 0.9028,
+  "speedup": 2.21,
+  "efficiency_pct": 55.2
+ },
+ {
+  "profile": "8 vCPU",
+  "cores": 8,
+  "reps": 3,
+  "median_s": 4.177,
+  "min_s": 4.094,
+  "max_s": 4.177,
+  "peak_rss_mb": 485.5,
+  "rows": 25200,
+  "f1_macro": 0.9028,
+  "speedup": 2.63,
+  "efficiency_pct": 32.9
+ }
+]
